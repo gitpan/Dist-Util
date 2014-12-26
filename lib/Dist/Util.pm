@@ -1,7 +1,7 @@
 package Dist::Util;
 
-our $DATE = '2014-12-04'; # DATE
-our $VERSION = '0.05'; # VERSION
+our $DATE = '2014-12-26'; # DATE
+our $VERSION = '0.06'; # VERSION
 
 use 5.010001;
 use strict;
@@ -112,7 +112,7 @@ Dist::Util - Dist-related utilities
 
 =head1 VERSION
 
-This document describes version 0.05 of Dist::Util (from Perl distribution Dist-Util), released on 2014-12-04.
+This document describes version 0.06 of Dist::Util (from Perl distribution Dist-Util), released on 2014-12-26.
 
 =head1 SYNOPSIS
 
@@ -143,6 +143,8 @@ Find all C<.packlist> files in C<@INC> and then pick the dist names from the
 paths, because C<.packlist> files are put in:
 
  $INC/$Config{archname}/auto/Foo/Bar/.packlist
+
+Caveat: many Linux distributions strip C<.packlist> files.
 
 =head2 list_dist_modules($mod) => LIST
 
